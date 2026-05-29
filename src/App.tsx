@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { HomePage } from "./pages/HomePage";
 import { MentorsPage } from "./pages/MentorsPage";
 import { MentorProfilePage } from "./pages/MentorProfilePage";
+import { FitWellCoachPage } from "./pages/FitWellCoachPage";
 import { CommunityPage } from "./pages/CommunityPage";
 import { GrowthPage } from "./pages/GrowthPage";
 import { ProfilePage } from "./pages/ProfilePage";
@@ -14,6 +15,7 @@ export default function App() {
         <Route path="/" element={<Navigate to="/home" replace />} />
         <Route path="/home" element={<HomePage />} />
         <Route path="/mentors" element={<MentorsPage />} />
+        <Route path="/mentor/fitwell" element={<FitWellCoachPage />} />
         <Route path="/mentor/:id" element={<MentorProfilePage />} />
         <Route path="/community" element={<CommunityPage />} />
         <Route path="/growth" element={<GrowthPage />} />
